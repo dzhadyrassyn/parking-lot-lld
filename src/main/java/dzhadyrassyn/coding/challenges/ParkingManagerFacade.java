@@ -4,12 +4,15 @@ import java.util.Map;
 
 public class ParkingManagerFacade {
 
-    Parking parking;
+    private Parking parking;
 
     public Ticket parkVehicle(Vehicle vehicle) {
         Ticket ticket = new Ticket(System.currentTimeMillis());
         ticket.setVehicle(vehicle);
 
+//        parking
+//        List<Floor> floors = parking.floors;
+//        floors.stream().anyMatch(it -> it.parkingSpaces.stream().anyMatch(ps -> ps.isAvailable() && ps.))
         return ticket;
     }
 

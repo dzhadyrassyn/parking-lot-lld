@@ -7,4 +7,6 @@ public abstract class Vehicle {
     public Vehicle(String licensePlate) {
         this.licensePlate = licensePlate;
     }
+
+    public abstract VehicleType getType();
 }
