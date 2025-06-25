@@ -18,7 +18,7 @@ public class ParkingSpace {
         return isAvailable && supportedVehicleType == vehicle.getType();
     }
 
-    public void park(Vehicle vehicle) {
+    public void park() {
         this.isAvailable = false;
     }
 

@@ -23,7 +23,7 @@ public class ParkingManagerFacade {
             throw new IllegalArgumentException("No slot available for vehicle " + vehicle.getType());
         }
 
-        slot.get().park(vehicle);
+        slot.get().park();
 
         Ticket ticket = new Ticket(System.currentTimeMillis());
         ticket.setVehicle(vehicle);
