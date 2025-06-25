@@ -15,4 +15,8 @@ public class Parking {
     public Optional<ParkingSpace> findSlot(Vehicle vehicle) {
         return floors.stream().flatMap(it -> it.getAvailableSlot(vehicle).stream()).findFirst();
     }
+
+    public List<Floor> getFloors() {
+        return this.floors;
+    }
 }

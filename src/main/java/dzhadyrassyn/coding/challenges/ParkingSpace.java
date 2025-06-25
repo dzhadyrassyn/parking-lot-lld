@@ -2,11 +2,11 @@ package dzhadyrassyn.coding.challenges;
 
 public class ParkingSpace {
 
-    private Vehicle currentVehicle;
     private boolean isAvailable;
     private VehicleType supportedVehicleType;
 
     public ParkingSpace(VehicleType supportedVehicleType) {
+        isAvailable = true;
         this.supportedVehicleType = supportedVehicleType;
     }
 
@@ -19,12 +19,14 @@ public class ParkingSpace {
     }
 
     public void park(Vehicle vehicle) {
-        this.isAvailable = true;
-        this.currentVehicle = vehicle;
+        this.isAvailable = false;
     }
 
-    public void leave() {
-        this.isAvailable = false;
-        currentVehicle = null;
+    public void reset() {
+        this.isAvailable = true;
+    }
+
+    public VehicleType getSupportedVehicle() {
+        return this.supportedVehicleType;
     }
 }

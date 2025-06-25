@@ -15,4 +15,8 @@ public class Floor {
     public Optional<ParkingSpace> getAvailableSlot(Vehicle vehicle) {
         return parkingSpaces.stream().filter(it -> it.canFitVehicle(vehicle)).findFirst();
     }
+
+    public List<ParkingSpace> getParkingSpaces() {
+        return parkingSpaces;
+    }
 }

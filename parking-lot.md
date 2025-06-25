@@ -8,3 +8,6 @@ Applied Facade design patter as ParkingFacade class
 Target: Add missed methods
 
 Added missed methods for Floor and Parking. ParkingManagerFacade methods are missed for now. Todo tomorrow
+
+### 25.06.2025
+Added implementations for methods in ParkingManagerFacade
