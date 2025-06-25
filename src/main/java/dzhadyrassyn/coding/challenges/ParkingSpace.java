@@ -3,7 +3,7 @@ package dzhadyrassyn.coding.challenges;
 public class ParkingSpace {
 
     private boolean isAvailable;
-    private VehicleType supportedVehicleType;
+    private final VehicleType supportedVehicleType;
 
     public ParkingSpace(VehicleType supportedVehicleType) {
         isAvailable = true;
@@ -22,7 +22,7 @@ public class ParkingSpace {
         this.isAvailable = false;
     }
 
-    public void reset() {
+    public void free() {
         this.isAvailable = true;
     }
 

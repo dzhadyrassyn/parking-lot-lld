@@ -38,7 +38,7 @@ public class ParkingManagerFacade {
 
         Vehicle vehicle = ticket.getVehicle();
         ParkingSpace releasedParkingSpace = licenseToParkingSpaceMap.remove(vehicle.getLicensePlate());
-        releasedParkingSpace.reset();
+        releasedParkingSpace.free();
 
         ticket.setEndTime(System.currentTimeMillis());
 
