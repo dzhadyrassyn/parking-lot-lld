@@ -16,7 +16,6 @@ public class Main {
 
         ParkingManagerFacade parkingManager = new ParkingManagerFacade(parking);
         parkingManager.parkVehicle(new Car("123-CAR"));
-//        parkingManager.parkVehicle(new Motorcycle("123-MOTORCYCLE"));
         parkingManager.parkVehicle(new Truck("123-TRUCK"));
 
         System.out.println(parkingManager.getAvailableSlots());
